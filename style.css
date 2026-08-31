@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef9ff;
+    color: #203040;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #5bc0eb, #4aa9df);
+    color: white;
+}
+
+.encabezado h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.encabezado p {
+    font-size: 19px;
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 18px 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #2376a8;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.navegacion a:hover {
+    color: #155579;
+}
+
+/* Bienvenida */
+.bienvenida {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.bienvenida h2 {
+    font-size: 36px;
+    color: #176b9e;
+    margin-bottom: 15px;
+}
+
+.bienvenida p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    font-size: 18px;
+}
+
+/* Botones */
+.boton,
+button {
+    display: inline-block;
+    border: none;
+    padding: 12px 26px;
+    border-radius: 25px;
+    background-color: #3da9e9;
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.boton:hover,
+button:hover {
+    background-color: #258bc8;
+    transform: translateY(-2px);
+}
+
+/* Productos */
+.seccion-juguetes {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px 80px;
+    text-align: center;
+}
+
+.seccion-juguetes h2 {
+    font-size: 32px;
+    color: #176b9e;
+    margin-bottom: 35px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Tarjetas */
+.producto {
+    padding: 30px 22px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(42, 129, 174, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(42, 129, 174, 0.2);
+}
+
+.producto.destacado {
+    border: 2px solid #5bc0eb;
+}
+
+.emoji {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    color: #176b9e;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.descripcion {
+    min-height: 52px;
+    color: #667782;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    color: #222;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Contacto */
+.contacto {
+    max-width: 850px;
+    margin: 20px auto 70px;
+    padding: 45px 25px;
+    background-color: white;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(42, 129, 174, 0.12);
+}
+
+.contacto h2 {
+    color: #176b9e;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contacto > p {
+    margin-bottom: 20px;
+}
+
+.datos-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    color: #3c5968;
+}
+
+/* Pie de página */
+.pie {
+    padding: 25px 20px;
+    background-color: #176b9e;
+    color: white;
+    text-align: center;
+}
+
+/* Diseño para celulares */
+@media (max-width: 850px) {
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado h1 {
+        font-size: 36px;
+    }
+
+    .navegacion {
+        gap: 20px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .bienvenida h2 {
+        font-size: 28px;
+    }
+
+    .datos-contacto {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* Encabezado decorado */
+.encabezado {
+    position: relative;
+    overflow: hidden;
+    min-height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-encabezado {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contenido-encabezado h1 {
+    font-size: 58px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.contenido-encabezado p {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.mini-juguetes {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.boton-encabezado {
+    background-color: white;
+    color: #2384b8;
+}
+
+.boton-encabezado:hover {
+    background-color: #e8f8ff;
+    color: #176b9e;
+}
+
+/* Juguetes decorativos */
+.decoracion {
+    position: absolute;
+    z-index: 1;
+    font-size: 75px;
+    opacity: 0.85;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.izquierda {
+    left: 9%;
+    top: 25%;
+    transform: rotate(-12deg);
+}
+
+.izquierda-2 {
+    left: 18%;
+    bottom: 15%;
+    font-size: 55px;
+    transform: rotate(10deg);
+    animation-delay: 0.5s;
+}
+
+.derecha {
+    right: 9%;
+    top: 25%;
+    transform: rotate(12deg);
+    animation-delay: 1s;
+}
+
+.derecha-2 {
+    right: 18%;
+    bottom: 15%;
+    font-size: 55px;
+    transform: rotate(-10deg);
+    animation-delay: 1.5s;
+}
+
+/* Animación */
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(8deg);
+    }
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+
+    .encabezado {
+        min-height: 420px;
+    }
+
+    .contenido-encabezado h1 {
+        font-size: 42px;
+    }
+
+    .contenido-encabezado p {
+        font-size: 18px;
+    }
+
+    .decoracion {
+        font-size: 45px;
+    }
+
+    .izquierda {
+        left: 4%;
+        top: 15%;
+    }
+
+    .izquierda-2 {
+        left: 8%;
+        bottom: 8%;
+    }
+
+    .derecha {
+        right: 4%;
+        top: 15%;
+    }
+
+    .derecha-2 {
+        right: 8%;
+        bottom: 8%;
+    }
+}
