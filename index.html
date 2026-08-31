@@ -1,4 +1,4 @@
-<!DOCTYPE Its playtime>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -10,161 +10,428 @@
 
 <body>
 
-    <!-- Encabezado -->
-<header class="encabezado">
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
 
-    <div class="decoracion izquierda">🧸</div>
-    <div class="decoracion izquierda-2">🚀</div>
+        <div class="decoracion izquierda">🧸</div>
+        <div class="decoracion izquierda-2">🚀</div>
 
-    <div class="contenido-encabezado">
-        <span class="etiqueta">🎈 TIENDA DE JUGUETES 🎈</span>
+        <div class="contenido-encabezado">
+            <span class="etiqueta">🎈 TIENDA DE JUGUETES 🎈</span>
 
-        <h1>Its Playtime</h1>
+            <h1>Its Playtime</h1>
 
-        <p>¡La diversión comienza aquí!</p>
+            <p>¡La diversión comienza aquí!</p>
 
-        <div class="mini-juguetes">
-            🧸 &nbsp; 🚗 &nbsp; 🤖 &nbsp; 🧩 &nbsp; 🚀
+            <div class="mini-juguetes">
+                🧸 🚗 🤖 🧩 🚀
+            </div>
+
+            <a class="boton boton-encabezado" href="#juguetes">
+                Explorar juguetes
+            </a>
         </div>
 
-        <a class="boton boton-encabezado" href="#juguetes">
-            Explorar juguetes
-        </a>
-    </div>
+        <div class="decoracion derecha">🤖</div>
+        <div class="decoracion derecha-2">🎨</div>
 
-    <div class="decoracion derecha">🤖</div>
-    <div class="decoracion derecha-2">🎨</div>
-
-</header>
-```
+    </header>
 
 
-    <!-- Menú -->
+    <!-- MENÚ -->
     <nav class="navegacion">
         <a href="#inicio">Inicio</a>
         <a href="#juguetes">Juguetes</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
+
     <main>
 
-        <!-- Bienvenida -->
+        <!-- BIENVENIDA -->
         <section id="inicio" class="bienvenida">
             <h2>¡Bienvenido a Its Playtime!</h2>
+
             <p>
                 Descubre juguetes increíbles para todos los gustos.
-                ¡Elige tu favorito y prepárate para horas y horas de juego!
+                ¡Elige tu favorito y prepárate para jugar!
             </p>
 
-            <a class="boton" href="#juguetes">Ver juguetes</a>
+            <a class="boton" href="#juguetes">
+                Ver juguetes
+            </a>
         </section>
 
-        <!-- Productos -->
+
+        <!-- PRODUCTOS -->
         <section id="juguetes" class="seccion-juguetes">
+
             <h2>Nuestros juguetes</h2>
 
             <div class="productos">
 
-                <article class="producto">
+                <article class="producto"
+                    onclick="abrirCompra('Tobix', 170, '🧸')">
+
                     <div class="emoji">🧸</div>
                     <h3>Tobix</h3>
-                    <p class="descripcion">Un compañero suave y adorable para cualquier aventura.</p>
+
+                    <p class="descripcion">
+                        Un compañero suave y adorable para cualquier aventura.
+                    </p>
+
                     <p class="precio">$170 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto destacado">
+
+                <article class="producto destacado"
+                    onclick="abrirCompra('Turbo X', 200, '🏎️')">
+
                     <div class="emoji">🏎️</div>
                     <h3>Turbo X</h3>
-                    <p class="descripcion">¡El coche más rápido del planeta!</p>
+
+                    <p class="descripcion">
+                        ¡El coche más rápido del planeta!
+                    </p>
+
                     <p class="precio">$200 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto">
+
+                <article class="producto"
+                    onclick="abrirCompra('MechaBot', 350, '🤖')">
+
                     <div class="emoji">🤖</div>
                     <h3>MechaBot</h3>
-                    <p class="descripcion">Un robot listo para comenzar la diversión.</p>
+
+                    <p class="descripcion">
+                        Un robot listo para comenzar la diversión.
+                    </p>
+
                     <p class="precio">$350 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto">
+
+                <article class="producto"
+                    onclick="abrirCompra('Puzzle Box', 150, '🧩')">
+
                     <div class="emoji">🧩</div>
                     <h3>Puzzle Box</h3>
-                    <p class="descripcion">Pon a prueba tu imaginación y creatividad.</p>
+
+                    <p class="descripcion">
+                        Pon a prueba tu imaginación y creatividad.
+                    </p>
+
                     <p class="precio">$150 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto">
+
+                <article class="producto"
+                    onclick="abrirCompra('Space Rocket', 280, '🚀')">
+
                     <div class="emoji">🚀</div>
                     <h3>Space Rocket</h3>
-                    <p class="descripcion">¡Prepárate para despegar hacia el espacio!</p>
+
+                    <p class="descripcion">
+                        ¡Prepárate para despegar hacia el espacio!
+                    </p>
+
                     <p class="precio">$280 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto">
+
+                <article class="producto"
+                    onclick="abrirCompra('Dino Rex', 220, '🦖')">
+
                     <div class="emoji">🦖</div>
                     <h3>Dino Rex</h3>
-                    <p class="descripcion">Un pequeño dinosaurio para grandes aventuras.</p>
+
+                    <p class="descripcion">
+                        Un pequeño dinosaurio para grandes aventuras.
+                    </p>
+
                     <p class="precio">$220 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto">
+
+                <article class="producto"
+                    onclick="abrirCompra('Art Kit', 190, '🎨')">
+
                     <div class="emoji">🎨</div>
                     <h3>Art Kit</h3>
-                    <p class="descripcion">Todo lo necesario para dejar volar tu creatividad.</p>
+
+                    <p class="descripcion">
+                        Todo para dejar volar tu creatividad.
+                    </p>
+
                     <p class="precio">$190 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto">
+
+                <article class="producto"
+                    onclick="abrirCompra('Magic Wand', 130, '🪄')">
+
                     <div class="emoji">🪄</div>
                     <h3>Magic Wand</h3>
-                    <p class="descripcion">¡Convierte cualquier momento en magia!</p>
+
+                    <p class="descripcion">
+                        ¡Convierte cualquier momento en magia!
+                    </p>
+
                     <p class="precio">$130 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto">
+
+                <article class="producto"
+                    onclick="abrirCompra('Game Pad', 400, '🎮')">
+
                     <div class="emoji">🎮</div>
                     <h3>Game Pad</h3>
-                    <p class="descripcion">Diversión para quienes aman los videojuegos.</p>
+
+                    <p class="descripcion">
+                        Diversión para quienes aman los videojuegos.
+                    </p>
+
                     <p class="precio">$400 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
-                <article class="producto">
+
+                <article class="producto"
+                    onclick="abrirCompra('Magic Castle', 320, '🏰')">
+
                     <div class="emoji">🏰</div>
                     <h3>Magic Castle</h3>
-                    <p class="descripcion">Construye tu propio mundo de fantasía.</p>
+
+                    <p class="descripcion">
+                        Construye tu propio mundo de fantasía.
+                    </p>
+
                     <p class="precio">$320 MXN</p>
-                    <button type="button">Comprar</button>
+
+                    <button type="button">
+                        Comprar
+                    </button>
+
                 </article>
 
             </div>
         </section>
 
-        <!-- Contacto -->
+
+        <!-- CONTACTO -->
         <section id="contacto" class="contacto">
+
             <h2>¿Necesitas ayuda?</h2>
-            <p>Contáctanos para conocer nuestros productos y opciones de entrega.</p>
+
+            <p>
+                Contáctanos para conocer nuestros productos
+                y opciones de entrega.
+            </p>
 
             <div class="datos-contacto">
-                <p>📱 WhatsApp: 276 158 8041</p>
-                <p>📸 Instagram: @dnielv_txt</p>
+                <p>📱 WhatsApp: 222 123 4567</p>
+                <p>📧 Correo: contacto@itsplaytime.com</p>
+                <p>📸 Instagram: @itsplaytime</p>
             </div>
+
         </section>
 
     </main>
 
-    <!-- Pie de página -->
+
+    <!-- VENTANA DE COMPRA -->
+    <div id="ventanaCompra" class="modal">
+
+        <div class="ventana">
+
+            <button class="cerrar" onclick="cerrarCompra()">
+                ×
+            </button>
+
+            <div id="productoEmoji" class="emoji-modal">
+                🧸
+            </div>
+
+            <h2 id="productoNombre">
+                Tobix
+            </h2>
+
+            <p id="productoPrecio" class="precio-modal">
+                $170 MXN
+            </p>
+
+            <form onsubmit="realizarPedido(event)">
+
+                <label for="cantidad">
+                    Cantidad
+                </label>
+
+                <input
+                    type="number"
+                    id="cantidad"
+                    min="1"
+                    value="1"
+                    required
+                >
+
+                <label for="nombre">
+                    Tu nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+                <label for="contactoCliente">
+                    Teléfono o contacto
+                </label>
+
+                <input
+                    type="text"
+                    id="contactoCliente"
+                    placeholder="Tu número o contacto"
+                    required
+                >
+
+                <button class="boton-comprar" type="submit">
+                    Realizar pedido 🛒
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- PIE DE PÁGINA -->
     <footer class="pie">
-        <p>&copy; 2026 Its Playtime. Todos los derechos reservados.</p>
+        <p>
+            &copy; 2026 Its Playtime. Todos los derechos reservados.
+        </p>
     </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        let productoSeleccionado = "";
+        let precioSeleccionado = 0;
+
+        function abrirCompra(nombre, precio, emoji) {
+
+            productoSeleccionado = nombre;
+            precioSeleccionado = precio;
+
+            document.getElementById("productoNombre").textContent = nombre;
+
+            document.getElementById("productoPrecio").textContent =
+                "$" + precio + " MXN";
+
+            document.getElementById("productoEmoji").textContent = emoji;
+
+            document.getElementById("ventanaCompra").classList.add("mostrar");
+        }
+
+
+        function cerrarCompra() {
+
+            document.getElementById("ventanaCompra")
+                .classList.remove("mostrar");
+
+        }
+
+
+        function realizarPedido(event) {
+
+            event.preventDefault();
+
+            const cantidad =
+                document.getElementById("cantidad").value;
+
+            const nombre =
+                document.getElementById("nombre").value;
+
+            const contacto =
+                document.getElementById("contactoCliente").value;
+
+            const total =
+                precioSeleccionado * cantidad;
+
+            alert(
+                "¡Pedido realizado! 🎉\n\n" +
+                "Producto: " + productoSeleccionado + "\n" +
+                "Cantidad: " + cantidad + "\n" +
+                "Total: $" + total + " MXN\n\n" +
+                "Cliente: " + nombre + "\n" +
+                "Contacto: " + contacto
+            );
+
+            cerrarCompra();
+
+        }
+
+
+        window.onclick = function(event) {
+
+            const ventana =
+                document.getElementById("ventanaCompra");
+
+            if (event.target === ventana) {
+                cerrarCompra();
+            }
+
+        };
+
+    </script>
 
 </body>
 </html>
